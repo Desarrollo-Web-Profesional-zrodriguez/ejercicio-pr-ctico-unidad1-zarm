@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Challenge4 from "./components/Challenge4";
+import Challenge5 from "./components/Challenge5";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div style={appContainerStyle}>
+      <header style={headerStyle}>
+        <h1>React Challenges - Unidad 1</h1>
+        <p>Desafío 4 y Desafío 5</p>
+      </header>
+
+      <main>
+        <Challenge4 />
+        <Challenge5 />
+      </main>
+
+      <footer style={footerStyle}>
+        <p>By: Zahir Andrés Rodríguez Mora - 2026</p>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+const appContainerStyle = {
+  minHeight: "100vh",
+  backgroundColor: "#e9ecef",
+  padding: "20px",
+};
+
+const headerStyle = {
+  textAlign: "center",
+  backgroundColor: "#343a40",
+  color: "white",
+  padding: "30px",
+  borderRadius: "12px",
+  marginBottom: "30px",
+  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+};
+
+const footerStyle = {
+  textAlign: "center",
+  marginTop: "40px",
+  padding: "20px",
+  backgroundColor: "#552ba9ff",
+  color: "white",
+  borderRadius: "12px",
+  fontSize: "18px",
+  fontWeight: "bold",
+};
+
+export default App;
