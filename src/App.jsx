@@ -1,16 +1,18 @@
 import "./App.css";
 import Challenge4 from "./components/Challenge4";
+import Challenge5 from "./components/Challenge5";
 
 function App() {
   return (
     <div style={appContainerStyle}>
       <header style={headerStyle}>
-        <h1>React Challenge 4 - Unidad 1</h1>
-        <p>Lifting State Up (Levantar el Estado)</p>
+        <h1>React Challenges - Unidad 1</h1>
+        <p>Desafío 4 y Desafío 5</p>
       </header>
 
       <main>
         <Challenge4 />
+        <Challenge5 />
       </main>
 
       <footer style={footerStyle}>
